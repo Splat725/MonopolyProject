@@ -10,3 +10,12 @@ C:\Users\Programming\AppData\Local\Temporary Projects\Monopoly\obj\x86\Debug\Mon
 C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.exe
 C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.xml
 C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.pdb
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\bin\Debug\Monopoly.exe
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\bin\Debug\Monopoly.pdb
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\bin\Debug\Monopoly.xml
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.frmGame.resources
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.frmMenu.resources
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.frmScores.resources
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.frmSellTrade.resources
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.Resources.resources
+C:\Users\Programming\Documents\Monopoly\MonopolyProject\Monopoly\Monopoly\obj\x86\Debug\Monopoly.vbproj.GenerateResource.Cache
