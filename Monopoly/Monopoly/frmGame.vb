@@ -41,15 +41,15 @@
         picBoard.Width = Me.Height - 30
         Dim CloseX As Integer
         Dim CloseY As Integer
-        Dim BuyX As Integer
-        Dim BuyY As Integer
+        Dim ActionX As Integer
+        Dim ActionY As Integer
         CloseX = Me.Width - btnClose.Width - 30
         CloseY = Me.Height - btnClose.Height - 50
-        BuyX = picBoard.Width + 30
-        BuyY = Me.Height - btnBuy.Height - 50
+        ActionX = picBoard.Width + 30
+        ActionY = Me.Height - btnAction.Height - 50
 
         lblScorePanel.Left = picBoard.Width + 26
-        btnBuy.Location = New Point(BuyX, BuyY)
+        btnAction.Location = New Point(ActionX, ActionY)
         btnClose.Location = New Point(CloseX, CloseY)
 
         lblPlayer1.Left = picBoard.Width + 30

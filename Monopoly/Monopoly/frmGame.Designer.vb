@@ -40,7 +40,7 @@ Partial Class frmGame
         Me.btnTrade1 = New System.Windows.Forms.Button()
         Me.btnTrade2 = New System.Windows.Forms.Button()
         Me.btnSell2 = New System.Windows.Forms.Button()
-        Me.btnBuy = New System.Windows.Forms.Button()
+        Me.btnAction = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         CType(Me.picBoard, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer1Color, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -220,14 +220,14 @@ Partial Class frmGame
         Me.btnSell2.Text = "Sell"
         Me.btnSell2.UseVisualStyleBackColor = True
         '
-        'btnBuy
+        'btnAction
         '
-        Me.btnBuy.Location = New System.Drawing.Point(892, 808)
-        Me.btnBuy.Name = "btnBuy"
-        Me.btnBuy.Size = New System.Drawing.Size(108, 37)
-        Me.btnBuy.TabIndex = 21
-        Me.btnBuy.Text = "Buy this Property"
-        Me.btnBuy.UseVisualStyleBackColor = True
+        Me.btnAction.Location = New System.Drawing.Point(892, 808)
+        Me.btnAction.Name = "btnAction"
+        Me.btnAction.Size = New System.Drawing.Size(108, 37)
+        Me.btnAction.TabIndex = 21
+        Me.btnAction.Text = "Buy this Property"
+        Me.btnAction.UseVisualStyleBackColor = True
         '
         'btnClose
         '
@@ -244,7 +244,7 @@ Partial Class frmGame
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1243, 857)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnBuy)
+        Me.Controls.Add(Me.btnAction)
         Me.Controls.Add(Me.btnTrade2)
         Me.Controls.Add(Me.btnSell2)
         Me.Controls.Add(Me.btnTrade1)
@@ -292,6 +292,6 @@ Partial Class frmGame
     Friend WithEvents btnTrade1 As System.Windows.Forms.Button
     Friend WithEvents btnTrade2 As System.Windows.Forms.Button
     Friend WithEvents btnSell2 As System.Windows.Forms.Button
-    Friend WithEvents btnBuy As System.Windows.Forms.Button
+    Friend WithEvents btnAction As System.Windows.Forms.Button
     Friend WithEvents btnClose As System.Windows.Forms.Button
 End Class
