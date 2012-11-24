@@ -1,3 +1,9 @@
 /ignored/
 /Monopoly/Monopoly/bin/*
 /Monopoly/Monopoly/bin/
+/Monopoly/Monopoly/bin/Debug/
+/Monopoly/Monopoly/bin/Debug/*
+/Monopoly/Monopoly/bin/Release/
+/Monopoly/Monopoly/bin/Release/*
+
+
