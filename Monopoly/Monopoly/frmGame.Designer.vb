@@ -42,6 +42,7 @@ Partial Class frmGame
         Me.btnSell2 = New System.Windows.Forms.Button()
         Me.btnAction = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnDetach = New System.Windows.Forms.Button()
         CType(Me.picBoard, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer1Color, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer2Color, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,9 +223,9 @@ Partial Class frmGame
         '
         'btnAction
         '
-        Me.btnAction.Location = New System.Drawing.Point(892, 808)
+        Me.btnAction.Location = New System.Drawing.Point(918, 822)
         Me.btnAction.Name = "btnAction"
-        Me.btnAction.Size = New System.Drawing.Size(108, 37)
+        Me.btnAction.Size = New System.Drawing.Size(108, 23)
         Me.btnAction.TabIndex = 21
         Me.btnAction.Text = "Buy this Property"
         Me.btnAction.UseVisualStyleBackColor = True
@@ -238,11 +239,21 @@ Partial Class frmGame
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'btnDetach
+        '
+        Me.btnDetach.Location = New System.Drawing.Point(1032, 822)
+        Me.btnDetach.Name = "btnDetach"
+        Me.btnDetach.Size = New System.Drawing.Size(112, 23)
+        Me.btnDetach.TabIndex = 23
+        Me.btnDetach.Text = "Detach Score Panel"
+        Me.btnDetach.UseVisualStyleBackColor = True
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1243, 857)
+        Me.Controls.Add(Me.btnDetach)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnAction)
         Me.Controls.Add(Me.btnTrade2)
@@ -294,4 +305,5 @@ Partial Class frmGame
     Friend WithEvents btnSell2 As System.Windows.Forms.Button
     Friend WithEvents btnAction As System.Windows.Forms.Button
     Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents btnDetach As System.Windows.Forms.Button
 End Class

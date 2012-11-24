@@ -1,5 +1,32 @@
 ﻿Public Class frmMenu
 
+    Public Function ScorBrdSett()
+        frmGame.MaximumSize = New Size(frmGame.picBoard.Width, frmGame.picBoard.Height)
+        frmGame.Height = frmGame.picBoard.Height
+        frmGame.Width = frmGame.picBoard.Width
+
+        frmGame.lblScorePanel.Visible = False
+        frmGame.btnAction.Visible = False
+        frmGame.btnClose.Visible = False
+
+        frmGame.lblPlayer1.Visible = False
+        frmGame.picPlayer1Color.Visible = False
+        frmGame.lblMoney1.Visible = False
+        frmGame.lblMoneyAmount1.Visible = False
+        frmGame.lblProps1.Visible = False
+        frmGame.cmbProperties1.Visible = False
+        frmGame.btnSell1.Visible = False
+        frmGame.btnTrade1.Visible = False
+        frmGame.lblPlayer2.Visible = False
+        frmGame.picPlayer2Color.Visible = False
+        frmGame.lblMoney2.Visible = False
+        frmGame.lblMoneyAmount2.Visible = False
+        frmGame.lblProps2.Visible = False
+        frmGame.cmbProperties2.Visible = False
+        frmGame.btnSell2.Visible = False
+        frmGame.btnTrade2.Visible = False
+    End Function
+
     Private Sub frmMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Width = 500
         Me.Height = 462
@@ -108,7 +135,16 @@
 
     Private Sub btnBegin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBegin.Click
         Me.Hide()
-        frmGame.Show()
+        If cmbPlayers.SelectedItem = "2" Then
+            frmGame.Show()
+        Else
+            frmScores.Show()
+            ScorBrdSett()
+            frmGame.Show()
+
+        End If
+
+
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click

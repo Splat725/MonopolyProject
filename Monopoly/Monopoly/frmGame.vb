@@ -75,4 +75,33 @@
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
         End
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDetach.Click
+        Me.MaximumSize = New Size(picBoard.Width, picBoard.Height)
+        Me.Height = picBoard.Height
+        Me.Width = picBoard.Width
+
+        lblScorePanel.Visible = False
+        btnAction.Visible = False
+        btnClose.Visible = False
+
+        lblPlayer1.Visible = False
+        picPlayer1Color.Visible = False
+        lblMoney1.Visible = False
+        lblMoneyAmount1.Visible = False
+        lblProps1.Visible = False
+        cmbProperties1.Visible = False
+        btnSell1.Visible = False
+        btnTrade1.Visible = False
+        lblPlayer2.Visible = False
+        picPlayer2Color.Visible = False
+        lblMoney2.Visible = False
+        lblMoneyAmount2.Visible = False
+        lblProps2.Visible = False
+        cmbProperties2.Visible = False
+        btnSell2.Visible = False
+        btnTrade2.Visible = False
+
+        frmScores.Show()
+    End Sub
 End Class
