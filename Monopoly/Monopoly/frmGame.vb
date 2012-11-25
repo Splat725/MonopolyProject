@@ -47,14 +47,20 @@
         Dim CloseY As Integer
         Dim ActionX As Integer
         Dim ActionY As Integer
+        Dim DetachX As Integer
+        Dim DetachY As Integer
+
         CloseX = Me.Width - btnClose.Width - 30
         CloseY = Me.Height - btnClose.Height - 50
         ActionX = picBoard.Width + 30
         ActionY = Me.Height - btnAction.Height - 50
+        DetachX = btnClose.Location.X - btnDetach.Width / 3
+        DetachY = btnClose.Location.Y - btnDetach.Height - 10
 
         lblScorePanel.Left = picBoard.Width + 26
         btnAction.Location = New Point(ActionX, ActionY)
         btnClose.Location = New Point(CloseX, CloseY)
+        btnDetach.Location = New Point(DetachX, DetachY)
 
         lblPlayer1.Left = picBoard.Width + 30
         picPlayer1Color.Left = lblPlayer1.Location.X + lblPlayer1.Width + 50

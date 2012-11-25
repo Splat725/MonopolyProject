@@ -229,6 +229,7 @@ Partial Class frmGame
         Me.btnAction.TabIndex = 21
         Me.btnAction.Text = "Buy this Property"
         Me.btnAction.UseVisualStyleBackColor = True
+        Me.btnAction.Visible = False
         '
         'btnClose
         '
@@ -241,7 +242,7 @@ Partial Class frmGame
         '
         'btnDetach
         '
-        Me.btnDetach.Location = New System.Drawing.Point(1032, 822)
+        Me.btnDetach.Location = New System.Drawing.Point(1119, 793)
         Me.btnDetach.Name = "btnDetach"
         Me.btnDetach.Size = New System.Drawing.Size(112, 23)
         Me.btnDetach.TabIndex = 23

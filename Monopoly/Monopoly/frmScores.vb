@@ -60,8 +60,10 @@
             cmbProperties4.Visible = False
             btnSell4.Visible = False
             btnTrade4.Visible = False
-        ElseIf frmMenu.cmbPlayers.SelectedItem = "4" Then
 
+            btnAttach.Visible = False
+        ElseIf frmMenu.cmbPlayers.SelectedItem = "4" Then
+            btnAttach.Visible = False
         End If
 
         If frmMenu.txtName1.Text = "" Then
@@ -128,7 +130,13 @@
     End Sub
 
     Private Sub btnAttach_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAttach.Click
+        Dim DetachX As Integer
+        DetachX = frmGame.btnClose.Location.X - frmGame.btnDetach.Width / 3
+
+        frmGame.btnDetach.Visible = True
+        frmGame.btnDetach.Location = New Point(DetachX, 793)
         AttachPanel()
+        frmGame.Height = frmGame.Height + 1
         Me.Hide()
     End Sub
 
