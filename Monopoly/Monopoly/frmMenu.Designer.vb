@@ -69,7 +69,7 @@ Partial Class frmMenu
         'lblMonopoly
         '
         Me.lblMonopoly.AutoSize = True
-        Me.lblMonopoly.BackColor = System.Drawing.Color.DodgerBlue
+        Me.lblMonopoly.BackColor = System.Drawing.Color.LightBlue
         Me.lblMonopoly.Font = New System.Drawing.Font("Monotxt_IV25", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMonopoly.Location = New System.Drawing.Point(34, 9)
         Me.lblMonopoly.Name = "lblMonopoly"
@@ -395,7 +395,7 @@ Partial Class frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DodgerBlue
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(494, 735)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnBegin)

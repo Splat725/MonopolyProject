@@ -1,14 +1,14 @@
 ﻿Public Class frmMenu
 
-    Public Function ScorBrdSett()
-        frmGame.MaximumSize = New Size(frmGame.picBoard.Width, frmGame.picBoard.Height)
-        frmGame.Height = frmGame.picBoard.Height
+    Public Sub ScorBrdSett()
+        frmGame.MaximumSize = New Size(frmGame.picBoard.Width, frmGame.picBoard.Height + 10)
+        frmGame.Height = frmGame.picBoard.Height + 10
         frmGame.Width = frmGame.picBoard.Width
 
         frmGame.lblScorePanel.Visible = False
         frmGame.btnAction.Visible = False
         frmGame.btnClose.Visible = False
-
+        frmGame.btnDetach.Visible = False
         frmGame.lblPlayer1.Visible = False
         frmGame.picPlayer1Color.Visible = False
         frmGame.lblMoney1.Visible = False
@@ -25,7 +25,7 @@
         frmGame.cmbProperties2.Visible = False
         frmGame.btnSell2.Visible = False
         frmGame.btnTrade2.Visible = False
-    End Function
+    End Sub
 
     Private Sub frmMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Width = 500
@@ -141,7 +141,6 @@
             frmScores.Show()
             ScorBrdSett()
             frmGame.Show()
-
         End If
 
 

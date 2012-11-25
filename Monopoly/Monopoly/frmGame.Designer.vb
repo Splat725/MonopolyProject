@@ -50,7 +50,7 @@ Partial Class frmGame
         '
         'picBoard
         '
-        Me.picBoard.Image = Global.Monopoly.My.Resources.Resources.Board
+        Me.picBoard.Image = Global.Monopoly.My.Resources.Resources.BoardStandard
         Me.picBoard.Location = New System.Drawing.Point(1, 0)
         Me.picBoard.Name = "picBoard"
         Me.picBoard.Size = New System.Drawing.Size(855, 857)
@@ -223,9 +223,9 @@ Partial Class frmGame
         '
         'btnAction
         '
-        Me.btnAction.Location = New System.Drawing.Point(918, 822)
+        Me.btnAction.Location = New System.Drawing.Point(914, 822)
         Me.btnAction.Name = "btnAction"
-        Me.btnAction.Size = New System.Drawing.Size(108, 23)
+        Me.btnAction.Size = New System.Drawing.Size(112, 23)
         Me.btnAction.TabIndex = 21
         Me.btnAction.Text = "Buy this Property"
         Me.btnAction.UseVisualStyleBackColor = True

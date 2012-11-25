@@ -1,4 +1,30 @@
 ﻿Public Class frmScores
+    Public Sub AttachPanel()
+        frmGame.MaximumSize = New Size(frmGame.picBoard.Width + 337, frmGame.picBoard.Height)
+        frmGame.Height = frmGame.picBoard.Height
+        frmGame.Width = frmGame.picBoard.Width + 337
+
+        frmGame.lblScorePanel.Visible = True
+        frmGame.btnAction.Visible = False
+        frmGame.btnClose.Visible = True
+        frmGame.btnDetach.Visible = True
+        frmGame.lblPlayer1.Visible = True
+        frmGame.picPlayer1Color.Visible = True
+        frmGame.lblMoney1.Visible = True
+        frmGame.lblMoneyAmount1.Visible = True
+        frmGame.lblProps1.Visible = True
+        frmGame.cmbProperties1.Visible = True
+        frmGame.btnSell1.Visible = True
+        frmGame.btnTrade1.Visible = True
+        frmGame.lblPlayer2.Visible = True
+        frmGame.picPlayer2Color.Visible = True
+        frmGame.lblMoney2.Visible = True
+        frmGame.lblMoneyAmount2.Visible = True
+        frmGame.lblProps2.Visible = True
+        frmGame.cmbProperties2.Visible = True
+        frmGame.btnSell2.Visible = True
+        frmGame.btnTrade2.Visible = True
+    End Sub
 
     Private Sub frmScores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If frmMenu.cmbPlayers.SelectedItem = "2" Then
@@ -52,13 +78,13 @@
         If frmMenu.txtName3.Text = "" Then
             lblPlayer3.Text = "Player 3"
         Else
-            lblPlayer3.Text = frmMenu.txtName2.Text
+            lblPlayer3.Text = frmMenu.txtName3.Text
         End If
 
         If frmMenu.txtName4.Text = "" Then
             lblPlayer4.Text = "Player 4"
         Else
-            lblPlayer4.Text = frmMenu.txtName2.Text
+            lblPlayer4.Text = frmMenu.txtName4.Text
         End If
 
 
@@ -99,6 +125,11 @@
         Else
             lblMoneyAmount4.Text = 1500
         End If
+    End Sub
+
+    Private Sub btnAttach_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAttach.Click
+        AttachPanel()
+        Me.Hide()
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
