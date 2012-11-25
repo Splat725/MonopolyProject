@@ -1,58 +1,4 @@
 ﻿Public Class frmGame
-    
-    Public Sub Locations()
-        Dim loc1_1 As New Point(770, 825)
-        Dim loc2_1 As New Point
-        Dim loc3_1 As New Point
-        Dim loc4_1 As New Point
-        Dim loc5_1 As New Point
-        Dim loc6_1 As New Point
-        Dim loc7_1 As New Point
-        Dim loc8_1 As New Point
-        Dim loc9_1 As New Point
-        Dim loc10_1 As New Point
-        Dim loc11_1 As New Point
-        Dim loc12_1 As New Point
-        Dim loc13_1 As New Point
-        Dim loc14_1 As New Point
-        Dim loc15_1 As New Point
-        Dim loc16_1 As New Point
-        Dim loc17_1 As New Point
-        Dim loc18_1 As New Point
-        Dim loc19_1 As New Point
-        Dim loc20_1 As New Point
-        Dim loc21_1 As New Point
-        Dim loc22_1 As New Point
-        Dim loc23_1 As New Point
-        Dim loc24_1 As New Point
-        Dim loc25_1 As New Point
-        Dim loc26_1 As New Point
-        Dim loc27_1 As New Point
-        Dim loc28_1 As New Point
-        Dim loc29_1 As New Point
-        Dim loc30_1 As New Point
-        Dim loc31_1 As New Point
-        Dim loc32_1 As New Point
-        Dim loc33_1 As New Point
-        Dim loc34_1 As New Point
-        Dim loc35_1 As New Point
-        Dim loc36_1 As New Point
-        Dim loc37_1 As New Point
-        Dim loc38_1 As New Point
-        Dim loc39_1 As New Point
-        Dim loc40_1 As New Point
-
-    End Sub
-
-    Public Sub DrawDot(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles MyBase.Load
-
-        Dim mygraphics As Graphics
-        mygraphics = picBoard.CreateGraphics
-        Dim pen As New Drawing.Pen(System.Drawing.Color.Red, 1)
-        mygraphics.DrawEllipse(pen, 0, 0, 100, 100)
-        pen.Dispose()
-
-    End Sub
 
 
     Private Sub frmGame_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -95,8 +41,8 @@
     End Sub
 
     Private Sub frmGame_Resize(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Resize
-        picBoard.Height = Me.Height - 30
-        picBoard.Width = Me.Height - 30
+        picBoard.Height = Me.Height - 40
+        picBoard.Width = Me.Height - 40
         Dim CloseX As Integer
         Dim CloseY As Integer
         Dim ActionX As Integer
@@ -138,6 +84,4 @@
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
         End
     End Sub
-
-
 End Class
