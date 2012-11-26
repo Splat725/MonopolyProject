@@ -27,6 +27,8 @@
     End Sub
 
     Private Sub frmScores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim i As Long
+
         If frmMenu.cmbPlayers.SelectedItem = "2" Then
             Me.MinimumSize = New Size(329, 581)
             Me.MaximumSize = New Size(329, 581)
@@ -66,6 +68,11 @@
             btnAttach.Visible = False
         End If
 
+        '' SM:  Loop through controls on the form itself.
+        '' Does the same thing, just less repeated code.
+        For i = 1 To 4
+            If (frmMenu.Controls.Item("
+        Next
         If frmMenu.txtName1.Text = "" Then
             lblPlayer1.Text = "Player1"
         Else

@@ -3,12 +3,12 @@
 
     Private Sub frmGame_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        If frmMenu.txtName1.Text = "" Then
+        If frmMenu.txtName1.Text = vbNullString Then
             lblPlayer1.Text = "Player1"
         Else
             lblPlayer1.Text = frmMenu.txtName1.Text
         End If
-        If frmMenu.txtName2.Text = "" Then
+        If frmMenu.txtName2.Text = vbNullString Then
             lblPlayer2.Text = "Player 2"
         Else
             lblPlayer2.Text = frmMenu.txtName2.Text
