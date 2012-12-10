@@ -161,9 +161,11 @@ Partial Class frmMenu
         '
         'cmbColour1
         '
+        Me.cmbColour1.AutoCompleteCustomSource.AddRange(New String() {"Red", "Maroon", "Orange", "Brown", "Green", "Olive", "Blue", "Navy", "Purple", "Pink"})
         Me.cmbColour1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColour1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbColour1.FormattingEnabled = True
+        Me.cmbColour1.Items.AddRange(New Object() {"Green", "Lime", "Maroon", "Red", "Orange", "Navy", "Blue", "Purple", "Pink"})
         Me.cmbColour1.Location = New System.Drawing.Point(99, 218)
         Me.cmbColour1.Name = "cmbColour1"
         Me.cmbColour1.Size = New System.Drawing.Size(121, 28)

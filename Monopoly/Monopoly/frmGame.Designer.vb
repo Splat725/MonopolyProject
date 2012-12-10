@@ -253,7 +253,8 @@ Partial Class frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1243, 857)
+        Me.BackColor = System.Drawing.Color.LightBlue
+        Me.ClientSize = New System.Drawing.Size(1244, 857)
         Me.Controls.Add(Me.btnDetach)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnAction)

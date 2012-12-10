@@ -401,6 +401,7 @@ Partial Class frmScores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(699, 543)
         Me.Controls.Add(Me.btnAttach)
         Me.Controls.Add(Me.btnAction)
