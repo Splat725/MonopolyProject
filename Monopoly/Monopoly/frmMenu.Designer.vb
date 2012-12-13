@@ -59,9 +59,10 @@ Partial Class frmMenu
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(407, 700)
+        Me.btnClose.Location = New System.Drawing.Point(543, 862)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Size = New System.Drawing.Size(100, 28)
         Me.btnClose.TabIndex = 0
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
@@ -70,10 +71,11 @@ Partial Class frmMenu
         '
         Me.lblMonopoly.AutoSize = True
         Me.lblMonopoly.BackColor = System.Drawing.Color.LightBlue
-        Me.lblMonopoly.Font = New System.Drawing.Font("Monotxt_IV25", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMonopoly.Location = New System.Drawing.Point(34, 9)
+        Me.lblMonopoly.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMonopoly.Location = New System.Drawing.Point(45, 11)
+        Me.lblMonopoly.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMonopoly.Name = "lblMonopoly"
-        Me.lblMonopoly.Size = New System.Drawing.Size(412, 46)
+        Me.lblMonopoly.Size = New System.Drawing.Size(460, 54)
         Me.lblMonopoly.TabIndex = 1
         Me.lblMonopoly.Text = "MAT'S MONOPOLY"
         '
@@ -81,9 +83,10 @@ Partial Class frmMenu
         '
         Me.lblPlayers.AutoSize = True
         Me.lblPlayers.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayers.Location = New System.Drawing.Point(37, 71)
+        Me.lblPlayers.Location = New System.Drawing.Point(49, 87)
+        Me.lblPlayers.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlayers.Name = "lblPlayers"
-        Me.lblPlayers.Size = New System.Drawing.Size(195, 25)
+        Me.lblPlayers.Size = New System.Drawing.Size(246, 31)
         Me.lblPlayers.TabIndex = 2
         Me.lblPlayers.Text = "Number of Players:"
         '
@@ -93,9 +96,10 @@ Partial Class frmMenu
         Me.cmbPlayers.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbPlayers.FormattingEnabled = True
         Me.cmbPlayers.Items.AddRange(New Object() {"2", "3", "4"})
-        Me.cmbPlayers.Location = New System.Drawing.Point(238, 71)
+        Me.cmbPlayers.Location = New System.Drawing.Point(317, 87)
+        Me.cmbPlayers.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbPlayers.Name = "cmbPlayers"
-        Me.cmbPlayers.Size = New System.Drawing.Size(50, 33)
+        Me.cmbPlayers.Size = New System.Drawing.Size(65, 38)
         Me.cmbPlayers.TabIndex = 3
         '
         'lblPlayer1
@@ -103,9 +107,10 @@ Partial Class frmMenu
         Me.lblPlayer1.AutoSize = True
         Me.lblPlayer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer1.ForeColor = System.Drawing.Color.Black
-        Me.lblPlayer1.Location = New System.Drawing.Point(38, 132)
+        Me.lblPlayer1.Location = New System.Drawing.Point(51, 162)
+        Me.lblPlayer1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlayer1.Name = "lblPlayer1"
-        Me.lblPlayer1.Size = New System.Drawing.Size(77, 24)
+        Me.lblPlayer1.Size = New System.Drawing.Size(100, 29)
         Me.lblPlayer1.TabIndex = 4
         Me.lblPlayer1.Text = "Player 1"
         '
@@ -113,9 +118,10 @@ Partial Class frmMenu
         '
         Me.lblName1.AutoSize = True
         Me.lblName1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName1.Location = New System.Drawing.Point(38, 177)
+        Me.lblName1.Location = New System.Drawing.Point(51, 218)
+        Me.lblName1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName1.Name = "lblName1"
-        Me.lblName1.Size = New System.Drawing.Size(55, 20)
+        Me.lblName1.Size = New System.Drawing.Size(70, 25)
         Me.lblName1.TabIndex = 5
         Me.lblName1.Text = "Name:"
         '
@@ -123,9 +129,10 @@ Partial Class frmMenu
         '
         Me.lblColour1.AutoSize = True
         Me.lblColour1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColour1.Location = New System.Drawing.Point(38, 221)
+        Me.lblColour1.Location = New System.Drawing.Point(51, 272)
+        Me.lblColour1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour1.Name = "lblColour1"
-        Me.lblColour1.Size = New System.Drawing.Size(59, 20)
+        Me.lblColour1.Size = New System.Drawing.Size(76, 25)
         Me.lblColour1.TabIndex = 6
         Me.lblColour1.Text = "Colour:"
         '
@@ -133,19 +140,21 @@ Partial Class frmMenu
         '
         Me.lblDifficulty1.AutoSize = True
         Me.lblDifficulty1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDifficulty1.Location = New System.Drawing.Point(253, 177)
+        Me.lblDifficulty1.Location = New System.Drawing.Point(337, 218)
+        Me.lblDifficulty1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDifficulty1.Name = "lblDifficulty1"
-        Me.lblDifficulty1.Size = New System.Drawing.Size(73, 20)
+        Me.lblDifficulty1.Size = New System.Drawing.Size(90, 25)
         Me.lblDifficulty1.TabIndex = 7
         Me.lblDifficulty1.Text = "Difficulty:"
         '
         'txtName1
         '
         Me.txtName1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName1.Location = New System.Drawing.Point(99, 174)
+        Me.txtName1.Location = New System.Drawing.Point(132, 214)
+        Me.txtName1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName1.MaxLength = 10
         Me.txtName1.Name = "txtName1"
-        Me.txtName1.Size = New System.Drawing.Size(123, 26)
+        Me.txtName1.Size = New System.Drawing.Size(163, 30)
         Me.txtName1.TabIndex = 8
         '
         'cmbDifficulty1
@@ -154,9 +163,10 @@ Partial Class frmMenu
         Me.cmbDifficulty1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDifficulty1.FormattingEnabled = True
         Me.cmbDifficulty1.Items.AddRange(New Object() {"Easy", "Normal", "Hard"})
-        Me.cmbDifficulty1.Location = New System.Drawing.Point(325, 174)
+        Me.cmbDifficulty1.Location = New System.Drawing.Point(433, 214)
+        Me.cmbDifficulty1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbDifficulty1.Name = "cmbDifficulty1"
-        Me.cmbDifficulty1.Size = New System.Drawing.Size(121, 28)
+        Me.cmbDifficulty1.Size = New System.Drawing.Size(160, 33)
         Me.cmbDifficulty1.TabIndex = 9
         '
         'cmbColour1
@@ -164,9 +174,10 @@ Partial Class frmMenu
         Me.cmbColour1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColour1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbColour1.FormattingEnabled = True
-        Me.cmbColour1.Location = New System.Drawing.Point(99, 218)
+        Me.cmbColour1.Location = New System.Drawing.Point(132, 268)
+        Me.cmbColour1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbColour1.Name = "cmbColour1"
-        Me.cmbColour1.Size = New System.Drawing.Size(121, 28)
+        Me.cmbColour1.Size = New System.Drawing.Size(160, 33)
         Me.cmbColour1.TabIndex = 10
         '
         'cmbColour2
@@ -174,9 +185,10 @@ Partial Class frmMenu
         Me.cmbColour2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColour2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbColour2.FormattingEnabled = True
-        Me.cmbColour2.Location = New System.Drawing.Point(99, 359)
+        Me.cmbColour2.Location = New System.Drawing.Point(132, 442)
+        Me.cmbColour2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbColour2.Name = "cmbColour2"
-        Me.cmbColour2.Size = New System.Drawing.Size(121, 28)
+        Me.cmbColour2.Size = New System.Drawing.Size(160, 33)
         Me.cmbColour2.TabIndex = 17
         '
         'cmbDifficulty2
@@ -185,27 +197,30 @@ Partial Class frmMenu
         Me.cmbDifficulty2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDifficulty2.FormattingEnabled = True
         Me.cmbDifficulty2.Items.AddRange(New Object() {"Easy", "Normal", "Hard"})
-        Me.cmbDifficulty2.Location = New System.Drawing.Point(325, 315)
+        Me.cmbDifficulty2.Location = New System.Drawing.Point(433, 388)
+        Me.cmbDifficulty2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbDifficulty2.Name = "cmbDifficulty2"
-        Me.cmbDifficulty2.Size = New System.Drawing.Size(121, 28)
+        Me.cmbDifficulty2.Size = New System.Drawing.Size(160, 33)
         Me.cmbDifficulty2.TabIndex = 16
         '
         'txtName2
         '
         Me.txtName2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName2.Location = New System.Drawing.Point(99, 315)
+        Me.txtName2.Location = New System.Drawing.Point(132, 388)
+        Me.txtName2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName2.MaxLength = 10
         Me.txtName2.Name = "txtName2"
-        Me.txtName2.Size = New System.Drawing.Size(123, 26)
+        Me.txtName2.Size = New System.Drawing.Size(163, 30)
         Me.txtName2.TabIndex = 15
         '
         'lblDifficulty2
         '
         Me.lblDifficulty2.AutoSize = True
         Me.lblDifficulty2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDifficulty2.Location = New System.Drawing.Point(253, 318)
+        Me.lblDifficulty2.Location = New System.Drawing.Point(337, 391)
+        Me.lblDifficulty2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDifficulty2.Name = "lblDifficulty2"
-        Me.lblDifficulty2.Size = New System.Drawing.Size(73, 20)
+        Me.lblDifficulty2.Size = New System.Drawing.Size(90, 25)
         Me.lblDifficulty2.TabIndex = 14
         Me.lblDifficulty2.Text = "Difficulty:"
         '
@@ -213,9 +228,10 @@ Partial Class frmMenu
         '
         Me.lblColour2.AutoSize = True
         Me.lblColour2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColour2.Location = New System.Drawing.Point(38, 362)
+        Me.lblColour2.Location = New System.Drawing.Point(51, 446)
+        Me.lblColour2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour2.Name = "lblColour2"
-        Me.lblColour2.Size = New System.Drawing.Size(59, 20)
+        Me.lblColour2.Size = New System.Drawing.Size(76, 25)
         Me.lblColour2.TabIndex = 13
         Me.lblColour2.Text = "Colour:"
         '
@@ -223,9 +239,10 @@ Partial Class frmMenu
         '
         Me.lblName2.AutoSize = True
         Me.lblName2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName2.Location = New System.Drawing.Point(38, 318)
+        Me.lblName2.Location = New System.Drawing.Point(51, 391)
+        Me.lblName2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName2.Name = "lblName2"
-        Me.lblName2.Size = New System.Drawing.Size(55, 20)
+        Me.lblName2.Size = New System.Drawing.Size(70, 25)
         Me.lblName2.TabIndex = 12
         Me.lblName2.Text = "Name:"
         '
@@ -234,9 +251,10 @@ Partial Class frmMenu
         Me.lblPlayer2.AutoSize = True
         Me.lblPlayer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer2.ForeColor = System.Drawing.Color.Black
-        Me.lblPlayer2.Location = New System.Drawing.Point(38, 273)
+        Me.lblPlayer2.Location = New System.Drawing.Point(51, 336)
+        Me.lblPlayer2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlayer2.Name = "lblPlayer2"
-        Me.lblPlayer2.Size = New System.Drawing.Size(77, 24)
+        Me.lblPlayer2.Size = New System.Drawing.Size(100, 29)
         Me.lblPlayer2.TabIndex = 11
         Me.lblPlayer2.Text = "Player 2"
         '
@@ -245,9 +263,10 @@ Partial Class frmMenu
         Me.cmbColour3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColour3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbColour3.FormattingEnabled = True
-        Me.cmbColour3.Location = New System.Drawing.Point(99, 504)
+        Me.cmbColour3.Location = New System.Drawing.Point(132, 620)
+        Me.cmbColour3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbColour3.Name = "cmbColour3"
-        Me.cmbColour3.Size = New System.Drawing.Size(121, 28)
+        Me.cmbColour3.Size = New System.Drawing.Size(160, 33)
         Me.cmbColour3.TabIndex = 24
         '
         'cmbDifficulty3
@@ -256,27 +275,30 @@ Partial Class frmMenu
         Me.cmbDifficulty3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDifficulty3.FormattingEnabled = True
         Me.cmbDifficulty3.Items.AddRange(New Object() {"Easy", "Normal", "Hard"})
-        Me.cmbDifficulty3.Location = New System.Drawing.Point(325, 460)
+        Me.cmbDifficulty3.Location = New System.Drawing.Point(433, 566)
+        Me.cmbDifficulty3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbDifficulty3.Name = "cmbDifficulty3"
-        Me.cmbDifficulty3.Size = New System.Drawing.Size(121, 28)
+        Me.cmbDifficulty3.Size = New System.Drawing.Size(160, 33)
         Me.cmbDifficulty3.TabIndex = 23
         '
         'txtName3
         '
         Me.txtName3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName3.Location = New System.Drawing.Point(99, 460)
+        Me.txtName3.Location = New System.Drawing.Point(132, 566)
+        Me.txtName3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName3.MaxLength = 10
         Me.txtName3.Name = "txtName3"
-        Me.txtName3.Size = New System.Drawing.Size(123, 26)
+        Me.txtName3.Size = New System.Drawing.Size(163, 30)
         Me.txtName3.TabIndex = 22
         '
         'lblDifficulty3
         '
         Me.lblDifficulty3.AutoSize = True
         Me.lblDifficulty3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDifficulty3.Location = New System.Drawing.Point(253, 463)
+        Me.lblDifficulty3.Location = New System.Drawing.Point(337, 570)
+        Me.lblDifficulty3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDifficulty3.Name = "lblDifficulty3"
-        Me.lblDifficulty3.Size = New System.Drawing.Size(73, 20)
+        Me.lblDifficulty3.Size = New System.Drawing.Size(90, 25)
         Me.lblDifficulty3.TabIndex = 21
         Me.lblDifficulty3.Text = "Difficulty:"
         '
@@ -284,9 +306,10 @@ Partial Class frmMenu
         '
         Me.lblColour3.AutoSize = True
         Me.lblColour3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColour3.Location = New System.Drawing.Point(38, 507)
+        Me.lblColour3.Location = New System.Drawing.Point(51, 624)
+        Me.lblColour3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour3.Name = "lblColour3"
-        Me.lblColour3.Size = New System.Drawing.Size(59, 20)
+        Me.lblColour3.Size = New System.Drawing.Size(76, 25)
         Me.lblColour3.TabIndex = 20
         Me.lblColour3.Text = "Colour:"
         '
@@ -294,9 +317,10 @@ Partial Class frmMenu
         '
         Me.lblName3.AutoSize = True
         Me.lblName3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName3.Location = New System.Drawing.Point(38, 463)
+        Me.lblName3.Location = New System.Drawing.Point(51, 570)
+        Me.lblName3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName3.Name = "lblName3"
-        Me.lblName3.Size = New System.Drawing.Size(55, 20)
+        Me.lblName3.Size = New System.Drawing.Size(70, 25)
         Me.lblName3.TabIndex = 19
         Me.lblName3.Text = "Name:"
         '
@@ -305,9 +329,10 @@ Partial Class frmMenu
         Me.lblPlayer3.AutoSize = True
         Me.lblPlayer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer3.ForeColor = System.Drawing.Color.Black
-        Me.lblPlayer3.Location = New System.Drawing.Point(38, 418)
+        Me.lblPlayer3.Location = New System.Drawing.Point(51, 514)
+        Me.lblPlayer3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlayer3.Name = "lblPlayer3"
-        Me.lblPlayer3.Size = New System.Drawing.Size(77, 24)
+        Me.lblPlayer3.Size = New System.Drawing.Size(100, 29)
         Me.lblPlayer3.TabIndex = 18
         Me.lblPlayer3.Text = "Player 3"
         '
@@ -316,9 +341,10 @@ Partial Class frmMenu
         Me.cmbColour4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColour4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbColour4.FormattingEnabled = True
-        Me.cmbColour4.Location = New System.Drawing.Point(99, 652)
+        Me.cmbColour4.Location = New System.Drawing.Point(132, 802)
+        Me.cmbColour4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbColour4.Name = "cmbColour4"
-        Me.cmbColour4.Size = New System.Drawing.Size(121, 28)
+        Me.cmbColour4.Size = New System.Drawing.Size(160, 33)
         Me.cmbColour4.TabIndex = 31
         '
         'cmbDifficulty4
@@ -327,27 +353,30 @@ Partial Class frmMenu
         Me.cmbDifficulty4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDifficulty4.FormattingEnabled = True
         Me.cmbDifficulty4.Items.AddRange(New Object() {"Easy", "Normal", "Hard"})
-        Me.cmbDifficulty4.Location = New System.Drawing.Point(325, 608)
+        Me.cmbDifficulty4.Location = New System.Drawing.Point(433, 748)
+        Me.cmbDifficulty4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbDifficulty4.Name = "cmbDifficulty4"
-        Me.cmbDifficulty4.Size = New System.Drawing.Size(121, 28)
+        Me.cmbDifficulty4.Size = New System.Drawing.Size(160, 33)
         Me.cmbDifficulty4.TabIndex = 30
         '
         'txtName4
         '
         Me.txtName4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName4.Location = New System.Drawing.Point(99, 608)
+        Me.txtName4.Location = New System.Drawing.Point(132, 748)
+        Me.txtName4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName4.MaxLength = 10
         Me.txtName4.Name = "txtName4"
-        Me.txtName4.Size = New System.Drawing.Size(123, 26)
+        Me.txtName4.Size = New System.Drawing.Size(163, 30)
         Me.txtName4.TabIndex = 29
         '
         'lblDifficulty4
         '
         Me.lblDifficulty4.AutoSize = True
         Me.lblDifficulty4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDifficulty4.Location = New System.Drawing.Point(253, 611)
+        Me.lblDifficulty4.Location = New System.Drawing.Point(337, 752)
+        Me.lblDifficulty4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDifficulty4.Name = "lblDifficulty4"
-        Me.lblDifficulty4.Size = New System.Drawing.Size(73, 20)
+        Me.lblDifficulty4.Size = New System.Drawing.Size(90, 25)
         Me.lblDifficulty4.TabIndex = 28
         Me.lblDifficulty4.Text = "Difficulty:"
         '
@@ -355,9 +384,10 @@ Partial Class frmMenu
         '
         Me.lblColour4.AutoSize = True
         Me.lblColour4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColour4.Location = New System.Drawing.Point(38, 655)
+        Me.lblColour4.Location = New System.Drawing.Point(51, 806)
+        Me.lblColour4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour4.Name = "lblColour4"
-        Me.lblColour4.Size = New System.Drawing.Size(59, 20)
+        Me.lblColour4.Size = New System.Drawing.Size(76, 25)
         Me.lblColour4.TabIndex = 27
         Me.lblColour4.Text = "Colour:"
         '
@@ -365,9 +395,10 @@ Partial Class frmMenu
         '
         Me.lblName4.AutoSize = True
         Me.lblName4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName4.Location = New System.Drawing.Point(38, 611)
+        Me.lblName4.Location = New System.Drawing.Point(51, 752)
+        Me.lblName4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName4.Name = "lblName4"
-        Me.lblName4.Size = New System.Drawing.Size(55, 20)
+        Me.lblName4.Size = New System.Drawing.Size(70, 25)
         Me.lblName4.TabIndex = 26
         Me.lblName4.Text = "Name:"
         '
@@ -376,27 +407,29 @@ Partial Class frmMenu
         Me.lblPlayer4.AutoSize = True
         Me.lblPlayer4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer4.ForeColor = System.Drawing.Color.Black
-        Me.lblPlayer4.Location = New System.Drawing.Point(38, 566)
+        Me.lblPlayer4.Location = New System.Drawing.Point(51, 697)
+        Me.lblPlayer4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlayer4.Name = "lblPlayer4"
-        Me.lblPlayer4.Size = New System.Drawing.Size(77, 24)
+        Me.lblPlayer4.Size = New System.Drawing.Size(100, 29)
         Me.lblPlayer4.TabIndex = 25
         Me.lblPlayer4.Text = "Player 4"
         '
         'btnBegin
         '
-        Me.btnBegin.Location = New System.Drawing.Point(12, 700)
+        Me.btnBegin.Location = New System.Drawing.Point(16, 862)
+        Me.btnBegin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnBegin.Name = "btnBegin"
-        Me.btnBegin.Size = New System.Drawing.Size(75, 23)
+        Me.btnBegin.Size = New System.Drawing.Size(100, 28)
         Me.btnBegin.TabIndex = 32
         Me.btnBegin.Text = "Begin"
         Me.btnBegin.UseVisualStyleBackColor = True
         '
         'frmMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
-        Me.ClientSize = New System.Drawing.Size(494, 735)
+        Me.ClientSize = New System.Drawing.Size(659, 905)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnBegin)
         Me.Controls.Add(Me.cmbColour4)
@@ -432,8 +465,9 @@ Partial Class frmMenu
         Me.Controls.Add(Me.lblMonopoly)
         Me.Controls.Add(Me.btnClose)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(500, 800)
+        Me.MaximumSize = New System.Drawing.Size(665, 977)
         Me.MinimizeBox = False
         Me.Name = "frmMenu"
         Me.ShowInTaskbar = False
