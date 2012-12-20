@@ -72,9 +72,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsHumanPlayer.vb" />
-    <Compile Include="clsPlayer.vb" />
-    <Compile Include="clsPlayerManager.vb" />
     <Compile Include="frmGame.Designer.vb">
       <DependentUpon>frmGame.vb</DependentUpon>
     </Compile>
@@ -153,20 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BoardStandard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Hotel.png" />
-    <Content Include="Resources\House.png" />
-    <Content Include="Resources\Token-1.png" />
-    <Content Include="Resources\Token-10.png" />
-    <Content Include="Resources\Token-2.png" />
-    <Content Include="Resources\Token-3.png" />
-    <Content Include="Resources\Token-4.png" />
-    <Content Include="Resources\Token-5.png" />
-    <Content Include="Resources\Token-6.png" />
-    <Content Include="Resources\Token-7.png" />
-    <Content Include="Resources\Token-8.png" />
-    <Content Include="Resources\Token-9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
