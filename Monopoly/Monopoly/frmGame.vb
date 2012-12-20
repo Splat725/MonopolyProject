@@ -215,17 +215,6 @@
     Private Sub frmGame_Resize(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Resize
         'All the modifications to object locations and sizes when the form size is modified are here
 
-        'This sets the height for the picture box
-        If frmScores.Visible = True Then
-            'This is the dimensions for the board when the score panel is detached
-            picBoard.Height = Me.Height - 40
-            picBoard.Width = Me.Width - 18
-        Else
-            'This is the dimensions for the board when the score panel is still attached
-            picBoard.Height = Me.Height - 40
-            picBoard.Width = Me.Height - 50
-        End If
-
         'These are all dimmed locations for all the X and Y values of the Control buttons on the form, Close, Action/Buy, Detach
         'I did this because having them directly inseted into code was stressing and confusing, this made it easier to fix problems bit by bit
         Dim CloseX As Integer
@@ -235,42 +224,101 @@
         Dim DetachX As Integer
         Dim DetachY As Integer
 
-        'These are all the equations and code used for all of the above, each buttons X and Y formula
-        CloseX = Me.Width - btnClose.Width - 30
-        CloseY = Me.Height - btnClose.Height - 50
-        ActionX = picBoard.Width + 30
-        ActionY = Me.Height - btnAction.Height - 50
-        DetachX = btnClose.Location.X - btnDetach.Width / 3
-        DetachY = btnClose.Location.Y - btnDetach.Height - 10
 
-        'This is the location of the score panel, which is located at the very top of the form on the right hand side (when the score panel is attached)
-        lblScorePanel.Left = picBoard.Width + 26
+        'This sets the height for the picture box
+        If frmScores.Visible = True Then
+            'This is the dimensions for the board when the score panel is detached
+            picBoard.Height = Me.Height - 40
+            picBoard.Width = Me.Width - 18
+        ElseIf frmScores.Visible = False Then
+            'This is the dimensions for the board when the score panel is still attached
+            picBoard.Height = Me.Height - 40
+            picBoard.Width = Me.Height - 50
 
-        'This is all of the locations for the control buttons (Close, Action/Buy, Detached
-        'As you can also see, this is where the dimmed values above are located, you should also be able to see right away why writing in the formula here for each would get confusing
-        btnAction.Location = New Point(ActionX, ActionY)
-        btnClose.Location = New Point(CloseX, CloseY)
-        btnDetach.Location = New Point(DetachX, DetachY)
+            'These are all the equations and code used for all of the above, each buttons X and Y formula
+            CloseX = Me.Width - btnClose.Width - 30
+            CloseY = Me.Height - btnClose.Height - 50
+            ActionX = picBoard.Width + 30
+            ActionY = Me.Height - btnAction.Height - 50
+            DetachX = btnClose.Location.X - btnDetach.Width / 3
+            DetachY = btnClose.Location.Y - btnDetach.Height - 10
 
-        'Locations for all of the labels, buttons, comboboxes for Player 1
-        lblPlayer1.Left = picBoard.Width + 30
-        picPlayer1Color.Left = lblPlayer1.Location.X + lblPlayer1.Width + 50
-        lblMoney1.Left = picBoard.Width + 30
-        lblMoneyAmount1.Left = lblMoney1.Location.X + lblMoney1.Width + 12
-        lblProps1.Left = picBoard.Width + 30
-        cmbProperties1.Left = picBoard.Width + 30
-        btnSell1.Left = picBoard.Width + 30
-        btnTrade1.Left = btnSell1.Location.X + btnSell1.Width + 24
+            'This is the location of the score panel, which is located at the very top of the form on the right hand side (when the score panel is attached)
+            lblScorePanel.Left = picBoard.Width + 26
 
-        'Locations for all the labels, buttons, comboboxes for Player 2
-        lblPlayer2.Left = picBoard.Width + 30
-        picPlayer2Color.Left = lblPlayer2.Location.X + lblPlayer2.Width + 50
-        lblMoney2.Left = picBoard.Width + 30
-        lblMoneyAmount2.Left = lblMoney2.Location.X + lblMoney2.Width + 12
-        lblProps2.Left = picBoard.Width + 30
-        cmbProperties2.Left = picBoard.Width + 30
-        btnSell2.Left = picBoard.Width + 30
-        btnTrade2.Left = btnSell2.Location.X + btnSell2.Width + 24
+            'This is all of the locations for the control buttons (Close, Action/Buy, Detached
+            'As you can also see, this is where the dimmed values above are located, you should also be able to see right away why writing in the formula here for each would get confusing
+            btnAction.Location = New Point(ActionX, ActionY)
+            btnClose.Location = New Point(CloseX, CloseY)
+            btnDetach.Location = New Point(DetachX, DetachY)
+
+            'Locations for all of the labels, buttons, comboboxes for Player 1
+            lblPlayer1.Left = picBoard.Width + 30
+            picPlayer1Color.Left = lblPlayer1.Location.X + lblPlayer1.Width + 50
+            lblMoney1.Left = picBoard.Width + 30
+            lblMoneyAmount1.Left = lblMoney1.Location.X + lblMoney1.Width + 12
+            lblProps1.Left = picBoard.Width + 30
+            cmbProperties1.Left = picBoard.Width + 30
+            btnSell1.Left = picBoard.Width + 30
+            btnTrade1.Left = btnSell1.Location.X + btnSell1.Width + 24
+
+            'Locations for all the labels, buttons, comboboxes for Player 2
+            lblPlayer2.Left = picBoard.Width + 30
+            picPlayer2Color.Left = lblPlayer2.Location.X + lblPlayer2.Width + 50
+            lblMoney2.Left = picBoard.Width + 30
+            lblMoneyAmount2.Left = lblMoney2.Location.X + lblMoney2.Width + 12
+            lblProps2.Left = picBoard.Width + 30
+            cmbProperties2.Left = picBoard.Width + 30
+            btnSell2.Left = picBoard.Width + 30
+            btnTrade2.Left = btnSell2.Location.X + btnSell2.Width + 24
+
+        End If
+
+        ''These are all dimmed locations for all the X and Y values of the Control buttons on the form, Close, Action/Buy, Detach
+        ''I did this because having them directly inseted into code was stressing and confusing, this made it easier to fix problems bit by bit
+        'Dim CloseX As Integer
+        'Dim CloseY As Integer
+        'Dim ActionX As Integer
+        'Dim ActionY As Integer
+        'Dim DetachX As Integer
+        'Dim DetachY As Integer
+
+        ''These are all the equations and code used for all of the above, each buttons X and Y formula
+        'CloseX = Me.Width - btnClose.Width - 30
+        'CloseY = Me.Height - btnClose.Height - 50
+        'ActionX = picBoard.Width + 30
+        'ActionY = Me.Height - btnAction.Height - 50
+        'DetachX = btnClose.Location.X - btnDetach.Width / 3
+        'DetachY = btnClose.Location.Y - btnDetach.Height - 10
+
+        ''This is the location of the score panel, which is located at the very top of the form on the right hand side (when the score panel is attached)
+        'lblScorePanel.Left = picBoard.Width + 26
+
+        ''This is all of the locations for the control buttons (Close, Action/Buy, Detached
+        ''As you can also see, this is where the dimmed values above are located, you should also be able to see right away why writing in the formula here for each would get confusing
+        'btnAction.Location = New Point(ActionX, ActionY)
+        'btnClose.Location = New Point(CloseX, CloseY)
+        'btnDetach.Location = New Point(DetachX, DetachY)
+
+        ''Locations for all of the labels, buttons, comboboxes for Player 1
+        'lblPlayer1.Left = picBoard.Width + 30
+        'picPlayer1Color.Left = lblPlayer1.Location.X + lblPlayer1.Width + 50
+        'lblMoney1.Left = picBoard.Width + 30
+        'lblMoneyAmount1.Left = lblMoney1.Location.X + lblMoney1.Width + 12
+        'lblProps1.Left = picBoard.Width + 30
+        'cmbProperties1.Left = picBoard.Width + 30
+        'btnSell1.Left = picBoard.Width + 30
+        'btnTrade1.Left = btnSell1.Location.X + btnSell1.Width + 24
+
+        ''Locations for all the labels, buttons, comboboxes for Player 2
+        'lblPlayer2.Left = picBoard.Width + 30
+        'picPlayer2Color.Left = lblPlayer2.Location.X + lblPlayer2.Width + 50
+        'lblMoney2.Left = picBoard.Width + 30
+        'lblMoneyAmount2.Left = lblMoney2.Location.X + lblMoney2.Width + 12
+        'lblProps2.Left = picBoard.Width + 30
+        'cmbProperties2.Left = picBoard.Width + 30
+        'btnSell2.Left = picBoard.Width + 30
+        'btnTrade2.Left = btnSell2.Location.X + btnSell2.Width + 24
 
     End Sub
 

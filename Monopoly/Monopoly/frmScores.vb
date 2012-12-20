@@ -1,5 +1,11 @@
 ﻿Public Class frmScores
 
+    Public Sub FixReAttach()
+        frmGame.Size = New Size(frmGame.Width - 1, frmGame.Height - 1)
+        frmGame.Size = New Size(frmGame.Width + 1, frmGame.Height + 1)
+        frmGame.picBoard.Size = New Size(frmGame.picBoard.Width - 1, frmGame.picBoard.Height - 1)
+        frmGame.picBoard.Size = New Size(frmGame.picBoard.Width + 1, frmGame.picBoard.Height + 1)
+    End Sub
     Public Sub ScoreWindowConfig()
         'This configures the Score window depending on how many players are playing
 
@@ -56,9 +62,15 @@
         'This is the code to re-attach the score panel to the game window
 
         'This changes the size of the game window to accommodate the score panel being re-attached
+
         frmGame.MaximumSize = New Size(frmGame.picBoard.Width + 337, frmGame.picBoard.Height)
         frmGame.Height = frmGame.picBoard.Height
         frmGame.Width = frmGame.picBoard.Width + 337
+        frmGame.Width = (frmGame.Width - 800)
+        frmGame.Width = frmGame.Width + 800
+        frmGame.picBoard.Width = frmGame.Width - 337
+
+        
 
         'This shows all the buttons, labels and comboboxes for Players 1 and 2 (note; the option of re-attaching the score panel is unavailable when there are more than 2 players)
         frmGame.lblScorePanel.Visible = True
@@ -81,6 +93,7 @@
         frmGame.cmbProperties2.Visible = True
         frmGame.btnSell2.Visible = True
         frmGame.btnTrade2.Visible = True
+
     End Sub
 
     Private Sub frmScores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -101,10 +114,15 @@
         frmGame.btnDetach.Location = New Point(DetachX, 793)
         'This calls the Subroutine used to re-size the Game window to accommodate the score panel being re-attached
         AttachPanel()
-        'This sets the form height to + 1 to initiate all the size settings on the game form
-        frmGame.Height = frmGame.Height + 1
+
+        
+        'This sets the form height to subract 1 to initiate all the size settings on the game form
+        frmGame.Height = frmGame.Height - 1
         'and finally this hides the Score Window form
         Me.Hide()
+
+        'Possible fix for problem
+        FixReAttach()
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
